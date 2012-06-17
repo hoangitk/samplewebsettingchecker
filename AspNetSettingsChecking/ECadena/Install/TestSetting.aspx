@@ -83,7 +83,6 @@
 
         h1, h2, a {
             color: #fff;
-            width: 423px;
         }
 
         p {
@@ -152,17 +151,18 @@
                 width: 50px;
             }
 
-            table tr .detail {     
-                background: #ffffcc;      
+            table tr .detail {
+                background: #ffffcc;
+                color: #cc0033;
             }
 
         #trigger {
-            border-style: none;
-            border-color: inherit;
-            border-width: 0px;
-            background: #990099;
+            border-style: solid;
+            border-color: #cc0033;
+            border-width: 1px;
+            background: #ff3366;
             font-weight: bold;
-            color: #FFFF99;
+            color: #ffffff;
         }
     </style>
 </head>
@@ -172,11 +172,13 @@
             <h1>ECadena // Settings Checking</h1>
         </div>
         <div id="body">
+            <br />
             <form id="form1" runat="server">
             <div>
-                <input type="submit" runat="server" value=" Run " id="trigger" 
-                    onclick="beginProcess(); return false;" align="right" />
+                <input type="submit" runat="server" value=" Run " id="trigger"
+                    onclick="beginProcess(); return false;" />
             </div>
+            <br />
             <table>
                 <tr id="task1" onclick="showDetail('task1detail');" style="cursor: pointer">
                     <td class="title">Windows Server</td>
