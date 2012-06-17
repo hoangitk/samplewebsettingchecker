@@ -103,7 +103,7 @@
 
         div#header {
             padding: 1em;
-            background: #003366;
+            background: #0066cc;
             border-bottom: 6px gray;
         }
 
@@ -126,7 +126,7 @@
             position: absolute;
             width: 100%;
             bottom: 0; /* stick to bottom */
-            background: #003366;
+            background: #0066cc;
             border-top: 6px gray;
         }
 
@@ -137,7 +137,7 @@
             }
 
         table {
-            width: 650px;
+            width: 100%;
         }
 
             table tr .title {
@@ -145,14 +145,15 @@
                 color: #fff;
                 font-weight: bold;
                 padding: 5px;
-                width: 600px;
             }
 
             table tr .status {
                 padding-left: 10px;
+                width: 50px;
             }
 
-            table tr .detail {                
+            table tr .detail {     
+                background: #ffffcc;      
             }
 
         #trigger {
@@ -173,7 +174,8 @@
         <div id="body">
             <form id="form1" runat="server">
             <div>
-                <input type="submit" runat="server" value=" RUN " id="trigger" onclick="beginProcess(); return false;" align="right" />
+                <input type="submit" runat="server" value=" Run " id="trigger" 
+                    onclick="beginProcess(); return false;" align="right" />
             </div>
             <table>
                 <tr id="task1" onclick="showDetail('task1detail');" style="cursor: pointer">
